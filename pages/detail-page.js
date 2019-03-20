@@ -18,5 +18,14 @@
     comment.appendChild(h3)
     comment.appendChild(p)
 
+    // display the elements on the page
+    const commentSection = document.getElementById('comments')
+    commentSection.appendChild(comment)
+    //document.getElementById('comments').appendChild(comment)
+
+    // reset form values
+    inputField.value = null
+    textArea.value = null
+ 
     console.log(comment)
   }
